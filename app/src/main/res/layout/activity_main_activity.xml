@@ -1,0 +1,81 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_text"
+                android:textSize="120px"
+                android:gravity="center"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Spinner
+                android:id="@+id/choose_course_spinner"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/choose_course_button"
+                    android:text="@string/choose_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="chooseCourse"/>
+                
+                <Button
+                    android:text="@string/delete_course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="deleteCourse"/>
+            </LinearLayout>
+            
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/new_course_button"
+                android:text="@string/add_new_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addNewCourse"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

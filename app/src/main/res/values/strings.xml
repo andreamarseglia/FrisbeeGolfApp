@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings for main activity -->
+    <string name="app_name">Frisbee Golf</string>
+    <string name="welcome_text">Tervetuloa</string>
+    <string name="action_settings">Asetukset</string>
+    <string name="add_new_course">Lisää uusi rata</string>
+    <string name="choose_course">Valitse rata</string>
+    <string name="delete_course">Poista rata</string>
+
+    <!-- String for add new course activity -->
+    <string name="title_activity_new_course">Uuden radan nimi</string>
+    <string name="new_course_name_label">Anna uuden radan nimi:</string>
+    <string name="new_course_hole_label">Anna radan väylien lukumäärä:</string>
+    <string name="give_new_course_name">Anna uuden radan nimi</string>
+
+    <!-- Strings for add players activity -->
+    <string name="title_activity_add_players">Lisää pelaajat</string>
+    <string name="number_of_players_label">Anna pelaajien lukumäärä:</string>
+    <string name="ok">Lisää pelaajat</string>
+
+    <!-- Strings for play course activity -->
+    <string name="title_activity_play_course">Pelaa kierros</string>
+    <string name="fill_score_info">Nimi / väylän tulos (oletus par) / muuta / yht</string>
+    <string name="next_lane">Seuraava väylä</string>
+    <string name="prev_lane">Edellinen väylä</string>
+
+    <!-- String for result Activity -->
+    <string name="title_activity_result">Tulos näkymä</string>
+    <string name="result_string">Tulokset:</string>
+    <string name="result_button">Alkuun</string>
+
+
+</resources>

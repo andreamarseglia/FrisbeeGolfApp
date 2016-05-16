@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="10dp"
+    tools:context="com.andreamarseglia.app.frisbeeGolfApp.PlayCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Course name-->
+            <TextView
+                android:textSize="90px"
+                android:id="@+id/course_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- Lane number and bar -->
+            <TextView
+                android:textSize="90px"
+                android:id="@+id/hole_information_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!-- Info text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fill_score_info"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/score_fields"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+            <!-- Here will be dynamically created player fields -->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/prev_lane_button"
+                android:text="@string/prev_lane"
+                android:onClick="moveToPrevLane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/next_lane_button"
+                android:text="@string/next_lane"
+                android:onClick="moveToNextLane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

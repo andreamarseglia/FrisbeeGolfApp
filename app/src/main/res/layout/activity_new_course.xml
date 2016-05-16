@@ -1,0 +1,75 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:fillViewport="true"
+    tools:context="com.andreamarseglia.app.frisbeeGolfApp.NewCourseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/give_new_course_name"
+                android:textSize="70px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="@string/new_course_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="45px"/>
+
+            <EditText
+                android:id="@+id/new_course_name"
+                android:inputType="textCapSentences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="@string/new_course_hole_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="45px"/>
+
+            <EditText
+                android:id="@+id/new_course_holes"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/create_new_course"
+                android:text="@string/add_new_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="createNewCourse" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

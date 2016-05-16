@@ -18,27 +18,25 @@ import java.util.List;
 public class MainActivity extends Activity {
     private CourseList courseList;
     private Spinner courseSpinner;
-    DatabaseHelper mydb;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity);
-        mydb = new DatabaseHelper(this);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
 
-        upDateCourseSpinner();
+        //upDateCourseSpinner();
     }
 
     private void upDateCourseSpinner() {
         // Add and fills spinner
         courseSpinner = (Spinner)findViewById(R.id.choose_course_spinner);
 
-        courseList = mydb.getCourseList();
 
         List<String> list = new ArrayList<String>();
 
@@ -108,7 +106,6 @@ public class MainActivity extends Activity {
         builder.setCancelable(false)
                 .setPositiveButton("Kyllä", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        mydb.deleteCourse(courseName);
                         upDateCourseSpinner();
                         dialog.cancel();
                     }

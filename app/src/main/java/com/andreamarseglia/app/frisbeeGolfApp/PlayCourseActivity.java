@@ -92,9 +92,7 @@ public class PlayCourseActivity extends Activity {
     }
 
     private void saveCourse() {
-        DatabaseHelper mydb = new DatabaseHelper(this);
-        if(!mydb.isCourseExist(course.getName()))
-            mydb.createCourse(course);
+
     }
 
     @Override
